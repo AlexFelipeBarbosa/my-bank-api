@@ -78,4 +78,29 @@ router.get('/:id', (req, res) => {
   });
 });
 
+// Metodo DELETE
+router.delete('/:id', (req, res) => {
+  fs.readFile(global.fileName, 'utf8', (err, data) => {
+    try {
+      if (err) throw err;
+      let json = JSON.parse(data);
+      // deletando o ID
+      let accounts = json.accounts.filter(
+        (account) => account.id !== parseInt(req.params.id)
+      );
+      json.accounts = accounts;
+      //Escrevendo no account, ja desconsirando o ID que foi retirado.
+      fs.writeFile(global.fileName, JSON.stringify(json), (err) => {
+        if (err) {
+          res.status(400).send({ error: err.message });
+        } else {
+          res.end();
+        }
+      });
+    } catch (err) {
+      res.status(400).send({ error: err.message });
+    }
+  });
+});
+
 module.exports = router;
