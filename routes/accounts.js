@@ -103,4 +103,22 @@ router.delete('/:id', (req, res) => {
   });
 });
 
+// Metodo PUT
+router.put('/', (req, res) => {
+  let newAccount = req.body;
+  fs.readFile(global.fileName, 'utf8', (err, data) => {
+    try {
+      if (err) throw err;
+      let json = JSON.parse(data);
+      let oldIndex = json.accounts.findIndex(
+        (account) => account.id === newAccount.id
+      );
+
+      res.end();
+    } catch (err) {
+      res.status(400).send({ error: err.message });
+    }
+  });
+});
+
 module.exports = router;
