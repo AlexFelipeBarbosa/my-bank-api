@@ -34,6 +34,30 @@ app.post('/account', (req, res) => {
 */
 });
 
+// Iniciando a API na porta 3000
 app.listen(3000, function () {
+  // Ao iniciar a Aplicação, vamos verificar se o arquivo de registro existe
+  try {
+    fs.readFile('./data/accounts.json', 'utf-8', (err, data) => {
+      // Se der erro é porque ele não existe ainda.
+      if (err) {
+        //Caso não exista, será criado agora
+        const initialJson = {
+          nextId: 1,
+          accounts: [],
+        };
+        fs.writeFile(
+          './dados/accounts.json',
+          JSON.stringify(initialJson),
+          (err) => {
+            console.log(err);
+          }
+        );
+      }
+    });
+  } catch (error) {
+    console.log(error);
+  }
+
   console.log('API Started!');
 });
