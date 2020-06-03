@@ -1,6 +1,6 @@
 let express = require('express');
 let fs = require('fs'); // file system para trabalhar com arquivos
-global.fileName = './dados/account.json'; // caminho do Json (registros)
+global.fileName = './dados/accounts.json'; // caminho do Json (registros)
 
 let app = express();
 let accountsRouter = require('./routes/accounts.js');
