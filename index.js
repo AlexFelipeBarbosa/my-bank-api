@@ -6,19 +6,30 @@ app.use(express.json()); // utilizando objetos JSON
 
 // Metodo POST
 app.post('/account', (req, res) => {
-  let params = req.body; // recebemento os parametros passados no POST
-
+  let account = req.body; // recebemento os parametros passados no POST
   // Primeiro passo fazer a leitura dos registros existentes
   fs.readFile('./dados/accounts.json', 'utf-8', (err, data) => {
-    console.log(err);
+    if (!err) {
+      try {
+        // Convertendo String para JSON
+        let json = JSON.parse(data);
+        account = { id: json.nextId, ...account }; // ... pega toda a estrutura do account
+        json.nextId++; // incrementando o ID
+        json.accounts.push(account); // inserindo o novo account
 
-    try {
-      // Convertendo String para JSON
-      let json = JSON.parse(data);
-      res.send('post');
-      console.log(json);
-    } catch (error) {
-      res.send();
+        //Escrevendo no account
+        fs.writeFile('./dados/accounts.json', JSON.stringify(json), (err) => {
+          if (err) {
+            console.log(err);
+          } else {
+            res.end();
+          }
+        });
+      } catch (error) {
+        res.status(400).send({ error: err.message });
+      }
+    } else {
+      res.status(400).send({ error: err.message });
     }
   });
 
