@@ -114,7 +114,47 @@ router.put('/', (req, res) => {
         (account) => account.id === newAccount.id
       );
 
-      res.end();
+      //json.accounts[oldIndex] = newAccount;
+      json.accounts[oldIndex].name = newAccount.name;
+      json.accounts[oldIndex].balance = newAccount.balance;
+
+      fs.writeFile(global.fileName, JSON.stringify(json), (err) => {
+        if (err) {
+          res.status(400).send({ error: err.message });
+        } else {
+          res.end();
+        }
+      });
+    } catch (err) {
+      res.status(400).send({ error: err.message });
+    }
+  });
+});
+
+// Metodo para Depositar ou Sacar
+router.post('/transaction', (req, res) => {
+  let params = req.body;
+  fs.readFile(global.fileName, 'utf8', (err, data) => {
+    try {
+      if (err) throw err;
+      let json = JSON.parse(data);
+      let index = json.accounts.findIndex(
+        (account) => account.id === params.id
+      );
+
+      if (params.value < 0 && json.accounts[index].balance + params.value < 0) {
+        throw new Error('Não possui saldo suficiente!');
+      }
+
+      json.accounts[index].balance += parseInt(params.value);
+
+      fs.writeFile(global.fileName, JSON.stringify(json), (err) => {
+        if (err) {
+          res.status(400).send({ error: err.message });
+        } else {
+          res.send(json.accounts[index]);
+        }
+      });
     } catch (err) {
       res.status(400).send({ error: err.message });
     }
