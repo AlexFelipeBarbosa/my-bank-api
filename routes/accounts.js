@@ -61,9 +61,9 @@ router.get('/', (_, res) => {
 // Metodo GET - por ID
 router.get('/:id', (req, res) => {
   fs.readFile(global.fileName, 'utf8', (err, data) => {
-    if ('!err') {
+    try {
+      if (err) throw err;
       let json = JSON.parse(data);
-
       const account = json.accounts.find(
         (account) => account.id === parseInt(req.params.id)
       );
@@ -72,7 +72,7 @@ router.get('/:id', (req, res) => {
       } else {
         res.end();
       }
-    } else {
+    } catch (err) {
       res.status(400).send({ error: err.message });
     }
   });
