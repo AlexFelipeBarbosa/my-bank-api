@@ -20,7 +20,7 @@ app.post('/account', (req, res) => {
         //Escrevendo no account
         fs.writeFile('./dados/accounts.json', JSON.stringify(json), (err) => {
           if (err) {
-            console.log(err);
+            res.status(400).send({ error: err.message });
           } else {
             res.end();
           }
@@ -49,7 +49,7 @@ app.post('/account', (req, res) => {
 app.listen(3000, function () {
   // Ao iniciar a Aplicação, vamos verificar se o arquivo de registro existe
   try {
-    fs.readFile('./data/accounts.json', 'utf-8', (err, data) => {
+    fs.readFile('./data/accounts.json', 'utf8', (err, data) => {
       // Se der erro é porque ele não existe ainda.
       if (err) {
         //Caso não exista, será criado agora
@@ -61,7 +61,9 @@ app.listen(3000, function () {
           './dados/accounts.json',
           JSON.stringify(initialJson),
           (err) => {
-            console.log(err);
+            if (err) {
+              console.log(err);
+            }
           }
         );
       }
