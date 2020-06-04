@@ -91,3 +91,5 @@
 2020-06-04T14:08:33.606Z [my-bank-api] info: GET /account/id - {"id":9,"name":"Alex Barbosa","balance":1200}
 2020-06-04T14:08:37.910Z [my-bank-api] info: POST /account - {"id":12,"name":"Tonho Mantega","balance":2000.1}
 2020-06-04T14:08:42.494Z [my-bank-api] info: POST /transaction - {"id":9,"value":100}
+2020-06-04T14:14:22.529Z [my-bank-api] info: API Started!
+2020-06-04T14:14:31.552Z [my-bank-api] info: GET /account
