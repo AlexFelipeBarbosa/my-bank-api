@@ -1,8 +1,12 @@
-const express = require('express');
-const fs = require('fs').promises; // file system para trabalhar com arquivos
+import express from 'express';
+import { promises } from 'fs'; // file system para trabalhar com arquivos
+import winston from 'winston'; // trabalhar com logs
+import accountsRouter from './routes/accounts.js';
+
+const readFile = promises.readFile;
+const writeFile = promises.writeFile;
+
 const app = express();
-const winston = require('winston'); // gravação de logs
-const accountsRouter = require('./routes/accounts.js');
 
 global.fileName = './dados/accounts.json'; // caminho do Json (registros)
 
@@ -27,14 +31,14 @@ app.use('/account', accountsRouter);
 // Iniciando a API na porta 3000 *** Utilizando Promise agora
 app.listen(3000, async () => {
   try {
-    await fs.readFile(global.fileName, 'utf8');
+    await readFile(global.fileName, 'utf8');
     logger.info('API Started!');
   } catch (err) {
     const initialJson = {
       nextId: 1,
       accounts: [],
     };
-    fs.writeFile(global.fileName, JSON.stringify(initialJson)).catch((err) => {
+    writeFile(global.fileName, JSON.stringify(initialJson)).catch((err) => {
       logger.error(err);
     });
   }
