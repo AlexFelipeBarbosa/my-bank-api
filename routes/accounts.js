@@ -12,8 +12,11 @@ router.post('/', async (req, res) => {
     json.accounts.push(account);
     await fs.writeFile(global.fileName, JSON.stringify(json));
     res.end();
+
+    logger.info(`POST /account - ${JSON.stringify(account)}`);
   } catch (err) {
     res.status(400).send({ error: err.message });
+    logger.error(`POST / account - Erro: ${err.message}`);
   }
 });
 
@@ -25,8 +28,10 @@ router.get('/', async (_, res) => {
     let json = JSON.parse(data);
     delete json.nextId;
     res.send(json);
+    logger.info('GET /account');
   } catch (err) {
     res.status(400).send({ error: err.message });
+    logger.error(`GET / account - Erro: ${err.message}`);
   }
 });
 
@@ -40,11 +45,13 @@ router.get('/:id', async (req, res) => {
     );
     if (account) {
       res.send(account);
+      logger.info(`GET /account/id - ${JSON.stringify(account)}`);
     } else {
       res.end();
     }
   } catch (err) {
     res.status(400).send({ error: err.message });
+    logger.error(`GET / account/id - Erro: ${err.message}`);
   }
 });
 
@@ -62,8 +69,10 @@ router.delete('/:id', async (req, res) => {
     await fs.writeFile(global.fileName, JSON.stringify(json));
 
     res.end();
+    logger.info(`DELETE /account/id - ${req.params.id}`);
   } catch (err) {
     res.status(400).send({ error: err.message });
+    logger.error(`DELETE / account/id - Erro: ${err.message}`);
   }
 });
 
@@ -84,8 +93,10 @@ router.put('/', async (req, res) => {
 
     await fs.writeFile(global.fileName, JSON.stringify(json));
     res.end();
+    logger.info(`PUT /account - ${JSON.stringify(newAccount)}`);
   } catch (err) {
     res.status(400).send({ error: err.message });
+    logger.error(`PUT /account - Erro: ${err.message}`);
   }
 });
 
@@ -107,8 +118,10 @@ router.post('/transaction', async (req, res) => {
     await fs.writeFile(global.fileName, JSON.stringify(json));
 
     res.send(json.accounts[index]);
+    logger.info(`POST /transaction - ${JSON.stringify(params)}`);
   } catch (err) {
     res.status(400).send({ error: err.message });
+    logger.error(`POST /transaction - Erro: ${err.message}`);
   }
 });
 

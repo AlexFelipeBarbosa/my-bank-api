@@ -1,0 +1,86 @@
+2020-06-04T13:18:13.934Z [my-bank-api] info: API Started!
+2020-06-04T13:20:19.609Z [my-bank-api] info: API Started!
+2020-06-04T13:23:49.709Z [my-bank-api] info: API Started!
+2020-06-04T13:24:00.909Z [my-bank-api] info: API Started!
+2020-06-04T13:24:55.350Z [my-bank-api] info: Post /account - {"id":11,"name":"Tonho Mantega","balance":2000.1}
+2020-06-04T13:26:28.229Z [my-bank-api] info: API Started!
+2020-06-04T13:26:42.979Z [my-bank-api] info: API Started!
+2020-06-04T13:28:08.396Z [my-bank-api] info: API Started!
+2020-06-04T13:28:30.352Z [my-bank-api] info: GET /account
+2020-06-04T13:28:33.381Z [my-bank-api] info: GET /account/id - {"id":9,"name":"Alex Felipe Barbosa","balance":10}
+2020-06-04T13:29:19.654Z [my-bank-api] info: API Started!
+2020-06-04T13:29:25.024Z [my-bank-api] info: API Started!
+2020-06-04T13:30:24.574Z [my-bank-api] info: API Started!
+2020-06-04T13:30:42.297Z [my-bank-api] info: API Started!
+2020-06-04T13:30:57.058Z [my-bank-api] info: GET /account
+2020-06-04T13:30:58.778Z [my-bank-api] info: GET /account
+2020-06-04T13:31:02.047Z [my-bank-api] info: GET /account
+2020-06-04T13:31:02.212Z [my-bank-api] info: GET /account
+2020-06-04T13:31:02.394Z [my-bank-api] info: GET /account
+2020-06-04T13:31:02.614Z [my-bank-api] info: GET /account
+2020-06-04T13:31:02.774Z [my-bank-api] info: GET /account
+2020-06-04T13:31:02.912Z [my-bank-api] info: GET /account
+2020-06-04T13:31:56.539Z [my-bank-api] info: API Started!
+2020-06-04T13:32:03.795Z [my-bank-api] info: DELETE /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Felipe Barbosa","balance":10},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:32:09.075Z [my-bank-api] info: DELETE /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Felipe Barbosa","balance":10},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:32:09.978Z [my-bank-api] info: DELETE /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Felipe Barbosa","balance":10},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:32:10.704Z [my-bank-api] info: DELETE /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Felipe Barbosa","balance":10},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:32:11.331Z [my-bank-api] info: DELETE /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Felipe Barbosa","balance":10},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:32:39.441Z [my-bank-api] info: GET /account
+2020-06-04T13:33:16.919Z [my-bank-api] info: API Started!
+2020-06-04T13:33:19.703Z [my-bank-api] info: PUT /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Barbosa","balance":1000},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:33:20.949Z [my-bank-api] info: PUT /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Barbosa","balance":1000},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:33:21.527Z [my-bank-api] info: PUT /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Barbosa","balance":1000},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:33:21.691Z [my-bank-api] info: PUT /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Barbosa","balance":1000},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:33:21.871Z [my-bank-api] info: PUT /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Barbosa","balance":1000},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:33:22.005Z [my-bank-api] info: PUT /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Barbosa","balance":1000},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:33:22.170Z [my-bank-api] info: PUT /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Barbosa","balance":1000},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:33:22.328Z [my-bank-api] info: PUT /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Barbosa","balance":1000},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:33:22.457Z [my-bank-api] info: PUT /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Barbosa","balance":1000},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:33:22.594Z [my-bank-api] info: PUT /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Barbosa","balance":1000},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:33:22.754Z [my-bank-api] info: PUT /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Barbosa","balance":1000},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:33:22.896Z [my-bank-api] info: PUT /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Barbosa","balance":1000},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:33:23.055Z [my-bank-api] info: PUT /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Barbosa","balance":1000},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:33:23.236Z [my-bank-api] info: PUT /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Barbosa","balance":1000},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:33:23.339Z [my-bank-api] info: PUT /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Barbosa","balance":1000},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:33:23.468Z [my-bank-api] info: PUT /account/id - {"nextId":12,"accounts":[{"id":7,"name":"Barbosa","balance":"2000"},{"id":8,"name":"Barbosa","balance":"2000.10"},{"id":9,"name":"Alex Barbosa","balance":1000},{"id":11,"name":"Tonho Mantega","balance":2000.1}]}
+2020-06-04T13:34:17.148Z [my-bank-api] info: API Started!
+2020-06-04T13:34:30.975Z [my-bank-api] info: API Started!
+2020-06-04T13:34:36.630Z [my-bank-api] info: PUT /account/id - undefined
+2020-06-04T13:34:38.806Z [my-bank-api] info: PUT /account/id - undefined
+2020-06-04T13:35:20.453Z [my-bank-api] info: API Started!
+2020-06-04T13:35:23.954Z [my-bank-api] info: PUT /account/id - undefined
+2020-06-04T13:35:25.138Z [my-bank-api] info: PUT /account/id - undefined
+2020-06-04T13:35:25.611Z [my-bank-api] info: PUT /account/id - undefined
+2020-06-04T13:35:43.663Z [my-bank-api] info: API Started!
+2020-06-04T13:35:46.832Z [my-bank-api] info: PUT /account/id - undefined
+2020-06-04T13:35:48.016Z [my-bank-api] info: PUT /account/id - undefined
+2020-06-04T13:36:10.031Z [my-bank-api] info: API Started!
+2020-06-04T13:36:13.205Z [my-bank-api] info: PUT /account/id - undefined
+2020-06-04T13:36:14.137Z [my-bank-api] info: PUT /account/id - undefined
+2020-06-04T13:36:40.152Z [my-bank-api] info: API Started!
+2020-06-04T13:36:44.891Z [my-bank-api] info: PUT /account - {"id":9,"name":"Alex Barbosa","balance":1000}
+2020-06-04T13:36:46.090Z [my-bank-api] info: PUT /account - {"id":9,"name":"Alex Barbosa","balance":1000}
+2020-06-04T13:36:46.631Z [my-bank-api] info: PUT /account - {"id":9,"name":"Alex Barbosa","balance":1000}
+2020-06-04T13:36:46.906Z [my-bank-api] info: PUT /account - {"id":9,"name":"Alex Barbosa","balance":1000}
+2020-06-04T13:36:47.093Z [my-bank-api] info: PUT /account - {"id":9,"name":"Alex Barbosa","balance":1000}
+2020-06-04T13:36:47.227Z [my-bank-api] info: PUT /account - {"id":9,"name":"Alex Barbosa","balance":1000}
+2020-06-04T13:36:47.574Z [my-bank-api] info: PUT /account - {"id":9,"name":"Alex Barbosa","balance":1000}
+2020-06-04T13:36:47.743Z [my-bank-api] info: PUT /account - {"id":9,"name":"Alex Barbosa","balance":1000}
+2020-06-04T13:36:54.600Z [my-bank-api] info: GET /account
+2020-06-04T13:37:00.645Z [my-bank-api] info: DELETE /account/id - 7
+2020-06-04T13:37:25.423Z [my-bank-api] info: API Started!
+2020-06-04T13:37:28.835Z [my-bank-api] info: DELETE /account/id - [object Object],[object Object],[object Object]
+2020-06-04T13:37:33.467Z [my-bank-api] info: GET /account
+2020-06-04T13:37:40.276Z [my-bank-api] info: DELETE /account/id - [object Object],[object Object]
+2020-06-04T13:37:55.307Z [my-bank-api] info: API Started!
+2020-06-04T13:39:54.947Z [my-bank-api] info: API Started!
+2020-06-04T13:40:14.350Z [my-bank-api] error: POST /transaction - Erro: Cannot read property 'balance' of undefined
+2020-06-04T13:40:21.477Z [my-bank-api] error: POST /transaction - Erro: Cannot read property 'balance' of undefined
+2020-06-04T13:41:04.466Z [my-bank-api] error: POST /transaction - Erro: Cannot read property 'balance' of undefined
+2020-06-04T13:42:50.882Z [my-bank-api] info: API Started!
+2020-06-04T13:42:57.341Z [my-bank-api] error: POST /transaction - Erro: Cannot read property 'balance' of undefined
+2020-06-04T13:42:58.497Z [my-bank-api] error: POST /transaction - Erro: Cannot read property 'balance' of undefined
+2020-06-04T13:43:11.799Z [my-bank-api] info: GET /account
+2020-06-04T13:43:49.742Z [my-bank-api] info: POST /transaction - {"id":9,"value":100}
+2020-06-04T13:43:51.582Z [my-bank-api] info: POST /transaction - {"id":9,"value":100}

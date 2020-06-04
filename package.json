@@ -4,7 +4,8 @@
   "description": "Simulação de uma API de Banco",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "winston": "^3.2.1"
   },
   "devDependencies": {},
   "scripts": {
