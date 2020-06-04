@@ -45,7 +45,7 @@ app.listen(3000, async () => {
       nextId: 1,
       accounts: [],
     };
-    fs.writeFile(globa.fileName, JSON.stringify(initialJson)).catch((err) => {
+    fs.writeFile(global.fileName, JSON.stringify(initialJson)).catch((err) => {
       console.log(err);
     });
   }
